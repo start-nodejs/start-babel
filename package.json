@@ -1,0 +1,34 @@
+{
+  "name": "start-babel",
+  "version": "1.0.0",
+  "author": "RJ.Hwang <rongjihuang@gmail.com>",
+  "description": "Start Babel",
+  "keywords": [
+    "babel"
+  ],
+  "files": [
+    "README.md",
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "main": "dist/start-babel.cjs.js",
+  "jsnext:main": "dist/start-babel.es.js",
+  "homepage": "https://github.com/start-nodejs/start-babel",
+  "bugs": {
+    "url": "https://github.com/start-nodejs/start-babel/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/start-nodejs/start-babel.git"
+  },
+  "scripts": {
+    "clean": "rm -rf dist test/temp",
+    "test": "ava test/index.js",
+    "pretest": "npm run build",
+    "build": "babel index.js",
+    "prepare": "npm test"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
